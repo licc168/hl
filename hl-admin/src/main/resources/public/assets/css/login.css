@@ -1,0 +1,116 @@
+body,
+a,
+a:hover {
+  color: #fff;
+  font-family: "微软雅黑";
+}
+
+.bg {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -999;
+  background: url(https://yscf.kwin.top//Public/img/bg2.jpg);
+  background-size: 100%;
+}
+
+.container {
+  width: 100%;
+}
+
+.setbg {
+  width: 90%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main {
+  width: 100%;
+  padding: 15px 10px 10px 10px;
+  box-sizing: border-box;
+}
+
+i {
+  font-size: 35px;
+  display: block;
+  margin-left: calc(50% - 43px);
+  opacity: 0.8;
+  color: #fff;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#doc-my-tabs {
+  padding-top: 10px;
+}
+
+#doc-my-tabs li a {
+  border: none;
+  background: none;
+  color: #fff;
+  padding: 0px;
+  margin: 0px 10px;
+  font-weight: 600;
+}
+
+#doc-my-tabs li a:hover {
+  background: none;
+  color: #fff;
+}
+
+.am-tabs-bd {
+  border: none;
+}
+
+.addBorder {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+.am-form-group span {
+  color: #bbb;
+  font-size: 20px;
+}
+
+.am-form-field {
+  border: none!important;
+}
+
+.am-form-icon {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.am-form-icon:focus {
+  border: none;
+}
+
+.am-form-icon .am-form-field {
+  padding-left: 2.4em!important;
+}
+
+.determine {
+  display: block;
+  width: 100%;
+  height: 37px;
+  border-radius: 10px;
+  line-height: 37px;
+}
+.layui-m-layer2 .layui-m-layercont i:first-child{
+  background-color: red;
+}
+.layui-m-layer2 .layui-m-layercont i:nth-child(2){
+  background-color: #f40;
+}
+.layui-m-layer2 .layui-m-layercont i:nth-child(3){
+  background-color: #ff8100;
+}

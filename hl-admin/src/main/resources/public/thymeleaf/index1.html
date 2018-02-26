@@ -1,0 +1,500 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0042)https://yscf.kwin.top/admin.php?page=index -->
+<html lang="en" class="js cssanimations">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<title>首页</title>
+		    <div th:replace="static"></div>
+<link rel="stylesheet"  th:href="@{/css/allStyle.css}" />
+<link rel="stylesheet"  th:href="@{/css/index.css}" />
+
+	</head>
+
+	<body>
+		<div class="am-g">
+			<div class="bg"></div>
+			<div class="masks"></div>
+						<header data-am-widget="header" class="am-header am-header-default am-no-layout">
+				<div class="am-header-left am-header-nav">
+					<a href="https://yscf.kwin.top/admin.php?page=index" class="">
+						<i class="am-header-icon am-icon-home am-icon-sm"></i>
+					</a>
+				</div>
+				<h1 class="am-header-title">
+	        		<a href="javascript:;" class="">首页</a>
+	    		</h1>
+				<div class="am-header-right am-header-nav">
+					<div id="doc-dropdown-justify1">
+						<div class="am-dropdown">
+							<i id="doc-dropdown-open" class="am-icon-cog am-icon-md am-dropdown-toggle"></i>
+							<div class="am-dropdown-content" style="width: 1900px;">
+								<div class="setOptions">
+									<div class="addBorder setOn">
+										<div class="thisAbso">主要设置</div>
+										<div class="theLeft">
+											<a href="https://yscf.kwin.top/admin.php?page=main">游戏设置</a>
+											<div data-am-dropdown="{justify: &#39;#doc-dropdown-justify1&#39;}">
+												<a href="https://yscf.kwin.top/admin.php?page=limit">投注限额</a>
+											</div>
+											<a href="https://yscf.kwin.top/admin.php?page=notice">公告设置</a>
+										</div>
+										<div class="theRight">
+											<a href="https://yscf.kwin.top/admin.php?page=multiple">赔率设置</a>
+											<a href="https://yscf.kwin.top/admin.php?page=back">回本设置</a>
+											<a href="https://yscf.kwin.top/admin.php?page=reward">回水奖励</a>
+										</div>
+									</div>
+									<div class="addBorder setIn">
+										<div class="thisAbso">数据统计</div>
+										<div class="theLeft">
+											<a href="https://yscf.kwin.top/admin.php?page=data&amp;gid=1" class="isLeft">北京28统计</a>
+										</div>
+										<div class="theRight">
+											<a href="https://yscf.kwin.top/admin.php?page=data&amp;gid=2">加拿大28统计</a>
+										</div>
+
+									</div>
+									<div class="addBorder  setOut">
+										<div class="thisAbso">其他设置</div>
+										<div class="theLeft">
+											<a href="https://yscf.kwin.top/admin.php?page=user">玩家管理</a>
+										</div>
+										<div class="theRight">
+											<a href="https://yscf.kwin.top/admin.php?page=trust">一键加托</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>			<div id="tureMain">
+				<div class="topFixed">
+					<div id="doc-dropdown-justify7" class="am-u-sm-6">
+						<div id="player" class="info am-dropdown" data-am-dropdown="{justify: &#39;#doc-dropdown-justify7&#39;}">
+							<a href="https://yscf.kwin.top/admin.php?page=user"><span class="setLgSize"><m id="num">200</m>人</span></a>
+							<div class="absoBotton am-dropdown-toggle">真实玩家<i class="am-icon-chevron-down am-fr"></i></div>
+							<div class="Cover"></div>
+							<div class="am-dropdown-content" style="width: 945px;">
+								<span class="palyScore">玩家总分<m class="addInvBg" id="count">2229025156</m></span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<div id="loss" class="info">
+							<div id="doc-dropdown-justify5">
+								<div class="am-dropdown" data-am-dropdown="{justify: &#39;#doc-dropdown-justify5&#39;}">
+									<span class="setLgSize am-dropdown-toggle"><m id="profitTo">100</m>分
+				  			</span>
+									<div class="am-dropdown-content" style="width: 945px;">
+										<div class="falseBg">
+											<a href="https://yscf.kwin.top/admin.php?page=data&amp;gid=1"><div class="way">
+												<div>北京28今日盈亏</div><m id="profitToBJ" class="setM addInvBg">0</m></div></a>
+												<a href="https://yscf.kwin.top/admin.php?page=data&amp;gid=2">
+											<div class="buttonBg way">
+												<div>加拿大28今日盈亏</div>
+												<m id="profitToJND" class="setM addInvBg">100</m></div></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="doc-dropdown-justify2">
+								<div class="am-dropdown" data-am-dropdown="{justify: &#39;#doc-dropdown-justify2&#39;}">
+									<div class="absoBotton am-dropdown-toggle">今日盈亏<i class="am-icon-chevron-down am-fr"></i></div>
+									<div class="am-dropdown-content" style="width: 945px;">
+										<div class="falseBg2">
+											<div class="way1"><div>昨日盈亏 </div><m id="profitYe" class="addInvBg">561370</m></div>
+											<div class="way1"><div>北京28昨日盈亏</div><m class="addInvBg" id="profitYeBJ">89500</m></div>
+											<div class="way1"><div>加拿大28昨日盈亏</div><m class="addInvBg" id="profitYeJND">471870</m></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="doc-dropdown-justify3" class="am-u-sm-6">
+						<div id="PointsOn" class="info am-dropdown" data-am-dropdown="{justify: &#39;#doc-dropdown-justify3&#39;}">
+							<span class="setLgSize"><m id="upTo">5311</m>分</span>
+							<div class="absoBotton am-dropdown-toggle">今日上分<i class="am-icon-chevron-down am-fr"></i></div>
+							<div class="am-dropdown-content" style="width: 945px;">
+								<span class="upYeBg">昨日上分<m class="addInvBg" id="upYe">2147618167</m></span>
+							</div>
+						</div>
+					</div>
+					<div id="doc-dropdown-justify4" class="am-u-sm-6">
+						<div id="PointsOut" class="info am-dropdown" data-am-dropdown="{justify: &#39;#doc-dropdown-justify4&#39;}">
+							<span class="setLgSize"><m id="downTo">0</m>分</span>
+							<div class="absoBotton am-dropdown-toggle">今日下分<i class="am-icon-chevron-down am-fr"></i></div>
+							<div class="am-dropdown-content" style="width: 945px;">
+								<span class="downYeBg">昨日下分<m class="addInvBg" id="downYe">2147009541</m></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main">
+					<a href="https://yscf.kwin.top/admin.php?page=reward">
+						<div class="mainContent">
+							<div class="isLeftTxt">
+								<p>上次回水奖励</p>
+								<p>上次邀请奖励</p>
+								<p>上次奖励时间</p>
+							</div>
+							<div>
+								<p><m class="addInvBg" id="backCoin">0</m></p>
+								<p><m class="addInvBg" id="inviteCoin">6</m></p>
+								<p><m class="addInvBg" id="backTime">2018-02-26 00:05:14</m></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="foot">
+					<div class="setFootBg">
+						<div class="am-u-sm-7 footContainer">
+							<span>用微信扫码进游戏</span>
+							<div id="StoreCodes" title="http://hgfi.lilylily119618.top/code.php?mid=1">
+							<canvas width="100" height="100" style="display: none;"></canvas>
+							<img src="data:image/png;base64,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" style="display: block;"/></div>
+						</div>
+						<div class="am-u-sm-5 footContainer">
+							<a id="onPoints" class="onMessage" href="javascript:;">上分消息(<m id="pendUp">0</m>)</a>
+							<a id="outPoints" class="outMessage" href="javascript:;">下分消息(<m id="pendDown">0</m>)</a>
+							<span class="am-icon-clock-o isIcon"></span>
+							<span>平台到期<br/><m id="isTest">永久</m></span>
+							<a id="renewalId" class="renewal" href="/logout">退出登录</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="somedialog6">
+				<div class="dialog__overlay6"></div>
+				<div class="dialog__content6">
+					<div class="thisContent">
+					</div>
+				</div>
+			</div>
+			<div id="somedialog7">
+				<div class="dialog__overlay7"></div>
+				<div class="dialog__content7">
+					<div class="thisContent">
+					</div>
+				</div>
+			</div>
+		</div>
+
+<script  th:src="@{/assets/js/qrcode.min.js}" ></script>
+<script>
+		$(function() {
+			getDataAdmin("a=admin&m=index",{ },function(data){
+				var qrcode = new QRCode(document.getElementById("StoreCodes"),{
+					width:100,
+					height:100,
+					correctLevel : QRCode.CorrectLevel.H
+				});
+				qrcode.makeCode(data.url);
+				$("#count").text(data.count);
+				$("#backCoin").text(data.backCoin);
+				$("#backTime").text(timestampToTime(data.backTime,true));
+				$("#inviteCoin").text(data.inviteCoin);
+				$("#downTo").text(data.downTo);
+				$("#downYe").text(data.downYe);
+				if(data.isTest == true){
+					$("#isTest").text("永久");
+				}else{
+					if(data.stopTime>=2000000000){
+						$("#isTest").text("永久");
+					}else{
+						$("#isTest").text(timestampToTime(data.stopTime,false));
+					}
+				}
+				$("#num").text(data.num);
+				$("#pendDown").text(data.pendDown);
+				$("#pendUp").text(data.pendUp);
+				$("#profitTo").text(data.profitTo);
+				$("#profitToBJ").text(data.profitToBJ);
+				$("#profitToJND").text(data.profitToJND);
+				$("#profitYe").text(data.profitYe);
+				$("#profitYeBJ").text(data.profitYeBJ);
+				$("#profitYeJND").text(data.profitYeJND);
+				$("#upTo").text(data.upTo);
+				$("#upYe").text(data.upYe);
+			});
+			$("#doc-dropdown-justify1 .am-dropdown-content").width($(window).width() - 20);
+			$(".info .am-dropdown-content").width($(".info").width());
+			var DialogFx6 = function(ele, opt) {
+				this.$element = ele,
+					this.defaults = {
+						'id': 'somedialog6',
+						'dialogFx6': '0',
+					},
+					this.options = $.extend({}, this.defaults, opt)
+			}
+			DialogFx6.prototype = {
+				Show: function() {
+					$("#" + this.options.id).removeClass("dialog--close6");
+					$("#" + this.options.id).addClass("dialog--open6");
+				},
+				Hidden: function() {
+					$("#" + this.options.id).removeClass("dialog--open6");
+					$("#" + this.options.id).addClass("dialog--close6");
+				}
+			}
+			$.fn.DialogShow6 = function(options) {
+				var dialogFx6 = new DialogFx6(this, options);
+				if(options.dialogFx6 == "0") {
+					return dialogFx6.Hidden();
+				} else {
+					return dialogFx6.Show();
+				}
+			}
+			$("#onPoints").click(function() {
+				$(".thisContent").html("");
+				getDataAdmin("a=admin&m=inCoin",{ },function(data){
+					$("#pendUp").html(data.num);
+					var html = "";
+					if(data.num==0){
+						layer.open({
+							content: "当前无人上分",
+							skin: 'footer'
+						});
+						return;
+					}
+					$(this).DialogShow6({
+						'id': 'somedialog6',
+						'dialogFx6': '1',
+					});
+					for(var i = 0; i<data.data.length; i++){
+					html +=	'<div class="oncontent">';
+					if(data.data[i].isNew){
+						html +=	'<div class="firstFlush">首充</div>';
+					}
+					html +=	'<div class="storeImg">';
+					html +=	'<img src="'+data.data[i].pic+'" alt="">';
+					html +=	'</div>';
+					html +='<div class="storeAtion">';
+					html +='<span>上分<input value="'+data.data[i].coin+'" class="smallInput" type="text" ></span><br>';
+					html +=	'<span>昵称 <span class="setBg">'+data.data[i].nick+'</span></span>';
+					html +=	'</div>';
+					html +=	'<div class="payTime">';
+					html +=	'			<div class="storeImg store1" >';
+					html +=	'				<span>上分</span>';
+					html +=	'			</div>';
+					html +=	'			<div  class="storeAtion">';
+					html +=	'				时间 <span class="setBg">'+timestampToTime(data.data[i].time,true)+'</span>';
+					html +=	'			</div>';
+					html +=	'</div>';
+					html +=	'<div class="storeButton">';
+					html +=	'<a class="confirm" href="javascript:;" onclick="confirmFn1('+data.data[i].id+',this);">确定</a>';
+					html +=	'<a class="delete" href="javascript:;" onclick="deleteFn1('+data.data[i].id+',this);">删除</a>';
+					html +=	'</div>';
+					html +=	'</div>';
+					}
+					$(".thisContent").html(html);
+				});
+			});
+			$(".dialog__overlay6").click(function() {
+				$(this).DialogShow6({
+					'id': 'somedialog6',
+					'dialogFx6': '0',
+				});
+			});
+			var DialogFx7 = function(ele, opt) {
+				this.$element = ele,
+					this.defaults = {
+						'id': 'somedialog7',
+						'dialogFx7': '0',
+					},
+					this.options = $.extend({}, this.defaults, opt)
+			}
+			DialogFx7.prototype = {
+				Show: function() {
+					$("#" + this.options.id).removeClass("dialog--close7");
+					$("#" + this.options.id).addClass("dialog--open7");
+				},
+				Hidden: function() {
+					$("#" + this.options.id).removeClass("dialog--open7");
+					$("#" + this.options.id).addClass("dialog--close7");
+				}
+			}
+			$.fn.DialogShow7 = function(options) {
+				var dialogFx7 = new DialogFx7(this, options);
+				if(options.dialogFx7 == "0") {
+					return dialogFx7.Hidden();
+				} else {
+					return dialogFx7.Show();
+				}
+			}
+			$("#outPoints").click(function() {
+				$(".thisContent").html("");
+				getDataAdmin("a=admin&m=outCoin",{ },function(data){
+					$("#pendDown").html(data.num);
+					var html = "";
+					if(data.num==0){
+						layer.open({
+							content: "当前无人下分",
+							skin: 'footer'
+						});
+						return;
+					}
+					$(this).DialogShow7({
+						'id': 'somedialog7',
+						'dialogFx7': '1',
+					});
+					for(var i = 0; i<data.data.length; i++){
+					html +=	'<div class="oncontent">';
+					html +=	'<div class="storeImg">';
+					html +=	'<img src="'+data.data[i].pic+'" alt="">';
+					html +=	'</div>';
+					html +='<div class="storeAtion">';
+					html +='下分 <span class="setBg isPoints">'+data.data[i].coin+'</span><br>';
+					html +=	'<span>昵称 <span class="setBg">'+data.data[i].nick+'</span></span>';
+					html +=	'</div>';
+					html +=	'<div class="payTime">';
+					html +=	'<div class="storeImg store1" >';
+					html +=	'<span>'+(parseInt(data.data[i].aid)==1 ? "支付宝" : (parseInt(data.data[i].aid)==2 ? "微信" : "财付通"))+'</span><br>';
+					html +=	'<span>下分</span>';
+					html +=	'</div>';
+					html +=	'<div  class="storeAtion">';
+					html +=	'下分 <span class="setBg">'+data.data[i].idcard+'</span><br>';
+					html +=	'时间 <span class="setBg">'+timestampToTime(data.data[i].time,true)+'</span>';
+					html +=	'</div>';
+					html +=	'</div>';
+					html +=	'<div class="storeButton">';
+					html +=	'<a class="confirm" href="javascript:;" onclick="confirmFn('+data.data[i].id+',this);">确定</a>';
+					html += '<a class="refused" href="javascript:;" onclick="RefusedFn('+data.data[i].id+',this)">拒绝</a>';
+					html +=	'<a class="delete" href="javascript:;" onclick="deleteFn('+data.data[i].id+',this);">删除</a>';
+					html +=	'</div>';
+					html +=	'</div>';
+					}
+					$(".thisContent").html(html);
+				});
+			});
+			$(".dialog__overlay7").click(function() {
+				$(this).DialogShow7({
+					'id': 'somedialog7',
+					'dialogFx7': '0',
+				});
+			});
+		})
+		function confirmFn(id,isThis){
+			layer.open({
+			    content: '是否确定下分！',
+			    btn: ['否', '是'],
+			    skin: 'footer',
+			    no: function(index){
+			    	getDataAdmin("a=admin&m=setOutCoin&id="+id,{},function(){
+						$(isThis).parents(".oncontent").remove();
+						$("#pendDown").text(parseInt($("#pendDown").text())-1);
+						layer.open({
+							content: "下分成功！",
+							skin: 'footer'
+						});
+						if($(".dialog__content7 .thisContent .oncontent").length==0){
+							$(this).DialogShow7({
+								'id': 'somedialog7',
+								'dialogFx7': '0',
+							});
+						}
+					});
+			    }
+			});
+		}
+		function RefusedFn(id,isThis){
+			layer.open({
+			    content: '是否拒绝下分！'
+			    ,btn: ['否', '是']
+			    ,skin: 'footer'
+			    ,no: function(index){
+			    	getDataAdmin("a=admin&m=refuseOutCoin&id="+id,{ },function(){
+					 	$(isThis).parents(".oncontent").remove();
+						$("#pendDown").text(parseInt($("#pendDown").text())-1);
+						layer.open({
+							content: "拒绝成功，分数已还给玩家！",
+							skin: 'footer'
+						});
+						if($(".dialog__content7 .thisContent .oncontent").length==0){
+							$(this).DialogShow7({
+								'id': 'somedialog7',
+								'dialogFx7': '0',
+							});
+						}
+					});
+			    }
+			});
+		}
+		function deleteFn(id,isThis){
+			layer.open({
+			    content: '是否删除！'
+			    ,btn: ['否', '是']
+			    ,skin: 'footer'
+			    ,no: function(index){
+			    	getDataAdmin("a=admin&m=delOutCoin&id="+id,{ },function(){
+						$(isThis).parents(".oncontent").remove();
+						$("#pendDown").text(parseInt($("#pendDown").text())-1);
+						layer.open({
+							content: "删除成功！",
+							skin: 'footer'
+						});
+						if($(".dialog__content7 .thisContent .oncontent").length==0){
+							$(this).DialogShow7({
+								'id': 'somedialog7',
+								'dialogFx7': '0',
+							});
+						}
+					});
+			    }
+			});
+		}
+		function confirmFn1(id,isThis){
+			layer.open({
+			    content: '是否确定上分！'
+			    ,btn: ['否', '是']
+			    ,skin: 'footer'
+			    ,no: function(index){
+			    	data={
+						coin:$(isThis).parents(".oncontent").find(".isPoints").text(),
+						id:id,
+					}
+					getDataAdmin("a=admin&m=setInCoin&id="+id,{ data },function(){
+						$(isThis).parents(".oncontent").remove();
+						$("#pendUp").text(parseInt($("#pendUp").text())-1);
+						layer.open({
+							content: "上分成功！",
+							skin: 'footer'
+						});
+						if($(".dialog__content6 .thisContent .oncontent").length==0){
+							$(this).DialogShow6({
+								'id': 'somedialog6',
+								'dialogFx6': '0',
+							});
+						}
+					});
+			    }
+			});
+		}
+		function deleteFn1(id,isThis){
+			layer.open({
+			    content: '是否删除上分！'
+			    ,btn: ['否', '是']
+			    ,skin: 'footer'
+			    ,no: function(index){
+			    	getDataAdmin("a=admin&m=delInCoin&id="+id,{ },function(){
+						$(isThis).parents(".oncontent").remove();
+						$("#pendUp").text(parseInt($("#pendUp").text())-1);
+						layer.open({
+							content: "删除成功！",
+							skin: 'footer'
+						});
+						if($(".dialog__content6 .thisContent .oncontent").length==0){
+							$(this).DialogShow6({
+								'id': 'somedialog6',
+								'dialogFx6': '0',
+							});
+						}
+					});
+			    }
+			});
+		}
+	</script>
+</body></html>

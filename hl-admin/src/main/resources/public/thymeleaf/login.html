@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://yscf.kwin.top/admin.php?page=login&f=1 -->
+<html lang="en" class="js cssanimations">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<title>控制台</title>
+    <div th:replace="static"></div>
+
+<link href="https://yscf.kwin.top/Public/js/../css/layer.css" type="text/css" rel="styleSheet" id="layermcss"/>
+<link rel="stylesheet"  th:href="@{/assets/css/login.css}"/>
+	</head>
+
+
+	<body>
+		<div class="am-g am-vertical-align" style="height: 974px;">
+			<div class="bg"></div>
+			<div class="container am-vertical-align-middle">
+				<div class="setbg">
+					<div class="main">
+						<i class="am-icon-cog am-icon-lg"></i>
+						<div class="content">
+							<div class="am-tabs" id="doc-my-tabs">
+								<ul class="am-tabs-nav am-nav am-nav-tabs am-nav-justify">
+									<li class="am-active">
+										<a class="isLogin" href="javascript:;" style="color: rgb(102, 255, 153);">登录</a>
+									</li>
+									<li class="addBorder">
+										<a class="isRegis" href="javascript:;" style="color: rgb(255, 255, 255);">注册</a>
+									</li>
+									<li>
+										<a class="isTopup" href="javascript:;" style="color: rgb(255, 255, 255);">充值</a>
+									</li>
+								</ul>
+								<div class="am-tabs-bd" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+									<div class="am-tab-panel am-form am-active am-in">
+										<div class="am-form-group am-form-icon">
+											<span class="am-icon-user am-fl"></span>
+											<input type="text" class="am-form-field" placeholder="请输入用户名"  name="loginUsername"/>
+										</div>
+										<div class="am-form-group am-form-icon">
+											<span class="am-icon-th-large am-fl"></span>
+											<input type="password" class="am-form-field" placeholder="请输入密码" name="loginPassword"/>
+										</div>
+										<a id="btnLogin" class="am-alert-success am-text-center am-text-lg determine" href="javascript:;">确定</a>
+									</div>
+									<div class="am-tab-panel am-form">
+										<div class="am-form-group am-form-icon">
+											<span class="am-icon-user am-fl"></span>
+											<input type="text" class="am-form-field" placeholder="请输入用户名" name="regUsername"/>
+										</div>
+										<div class="am-form-group am-form-icon">
+											<span class="am-icon-th-large am-fl"></span>
+											<input type="password" class="am-form-field" placeholder="请输入密码" name="regPassword"/>
+										</div>
+										<div class="am-form-group am-form-icon">
+											<span class="am-icon-credit-card am-fl"></span>
+											<input type="text" class="am-form-field" placeholder="请输入充值卡号" name="regCard"/>
+										</div>
+										<a id="btnReg" class="am-alert-success am-text-center am-text-lg determine" href="javascript:;">确定</a>
+									</div>
+									<div class="am-tab-panel am-form">
+										<div class="am-form-group am-form-icon">
+											<span class="am-icon-user am-fl"></span>
+											<input type="text" class="am-form-field" placeholder="请输入用户名" name="recUsername"/>
+										</div>
+										<div class="am-form-group am-form-icon">
+											<span class="am-icon-credit-card am-fl"></span>
+											<input type="text" class="am-form-field" placeholder="请输入充值卡号" name="recCard"/>
+										</div>
+										<a id="btnRec" class="am-alert-success am-text-center am-text-lg determine" href="javascript:;">确定</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<script src="https://yscf.kwin.top//Public/js/link.js"></script>
+
+<script>
+$(function() {
+
+    $(".am-g").height($(window).height());
+    			$("#doc-my-tabs").tabs();
+    			$("li a").click(function() {
+    				$("li a").css("color", "#fff");
+    				$(this).css("color", "#66ff99");
+    			});
+    //登录
+    $("#btnLogin").click(function() {
+    var username = $("input[name=loginUsername]").val()
+    var password = $("input[name=loginPassword]").val()
+      $.ajax({
+      type:"POST",
+      url:"doLogin",
+      data:{username:username,
+             password:password},
+      success:function(data) {
+        if(data.code===0){
+          layer.msg("用户名或密码错误")
+        }else{
+           window.location.href ="/index";
+        }
+
+      }
+
+      })
+    });
+    //注册
+  $("#btnReg").click(function() {
+    var userName = $("input[name=regUsername]").val()
+    var password = $("input[name=regPassword]").val()
+    var cardNumber = $("input[name=regCard]").val()
+;
+     var user = {"userName":userName,
+                             "password":password,
+                             "cardNumber":cardNumber};
+     console.log(user);
+      $.ajax({
+      type:"POST",
+      url:"register",
+      dataType: 'JSON',
+      contentType: 'application/json',
+      data:JSON.stringify(user),
+      success:function(data) {
+        if(data.code===0){
+          layer.msg(data.desc)
+        }
+
+      }
+
+      })
+    })
+
+})
+
+
+
+</script>
+</body></html>

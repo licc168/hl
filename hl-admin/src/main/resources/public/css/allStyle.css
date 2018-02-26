@@ -1,0 +1,123 @@
+body,a,a:hover{color: #fff;font-family: "微软雅黑";}
+.bg{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: -999;
+	background: url(../img/bg2.jpg);
+	background-size: 100%; 
+}
+.masks{
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background: rgba(55, 58, 71, 0.7);
+	z-index: -1;
+	display: none;
+}
+.am-dropdown-content{
+	padding: 0px;
+	border: none;
+	min-width: 0px!important;
+}
+#doc-dropdown-justify1 .am-dropdown-content{
+	border-radius: 5px;
+	background: rgba(0,100,145,0.9);
+	box-shadow:2px 2px  0px 0px rgba(0,0,0,0.4);
+}
+#doc-dropdown-justify1 .am-dropdown-content:before {
+    border-bottom-color: rgba(0,100,145,0.9);
+}
+#doc-dropdown-justify1 .am-dropdown-content:after{
+	border-bottom-color: rgba(0,100,145,0.9);
+}
+/*.am-dropdown-flip .am-dropdown-content{
+	right: -0px;
+}*/
+.setOptions{
+	width: 100%;
+	padding: 20px 10px 0px 10px;
+	box-sizing: border-box;
+}
+.am-dropdown-toggle a{
+	color: #fff;
+}
+.theLeft,.theRight{
+	width: 49%;
+	display: inline-block;
+	text-align: center;
+}
+.theRight{
+	float: right;
+}
+.addBorder{
+	border: 2px solid rgba(255,255,255,0.4);
+	padding: 20px 10px 0 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	position: relative;
+}
+.addBorder .thisAbso{
+	position: absolute;
+	background: rgba(0,100,145,0.6);
+	padding: 0 5px;
+	top: -13px;
+}
+.addBorder a{
+	display: inline-block;
+	height: 40px;
+	border: 2px solid rgba(255,255,255,0.4);
+	border-radius: 10px;
+	margin-bottom: 10px;
+	line-height: 40px;
+}
+.setOn a{
+	padding: 0 14%;
+}
+.setIn a{
+	width: 90%;
+}
+.setOut a{
+	padding: 0 14%;
+}
+.am-header-default{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+	background: rgba(0,105,210,0.4);
+}
+[class*=am-u-]{
+	padding: 0px;
+}
+
+#save{
+	clear: both;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	display: block;
+	width: 100%;
+	height: 40px;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#75A3C0),to(#28547E));
+	line-height: 40px;
+	text-align: center;
+	font-size: 24px;
+	opacity: 0.8;
+	border: none;
+	z-index: -10;
+}
+.layui-m-layer2 .layui-m-layercont i:first-child{
+	background-color: red;
+}
+.layui-m-layer2 .layui-m-layercont i:nth-child(2){
+	background-color: #f40;
+}
+.layui-m-layer2 .layui-m-layercont i:nth-child(3){
+	background-color: #ff8100;
+}
