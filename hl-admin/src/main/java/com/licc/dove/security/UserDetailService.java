@@ -44,8 +44,7 @@ public class UserDetailService implements UserDetailsService {
 
         grantedAuthorities.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
         List<MethodAuthority> methodAuthorities = getMethodAuthoritys();
-        return new org.springframework.security.core.userdetails.User(user.getUserName(),user.getPassword(), Collections
-            .emptyList());
+        return new org.springframework.security.core.userdetails.User(user.getUserName(),user.getPassword(),grantedAuthorities);
     }
 
 

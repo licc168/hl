@@ -8,7 +8,7 @@
 	</select>
 
   <!-- 单表等于查询 -->
-  <select id="listByExample" parameterType="com.jumore.dove.dao.ParamMap" resultType="Map">
+  <select id="listByExample" parameterType="com.licc.dove.dao.ParamMap" resultType="Map">
     select * from ${tableName}
     <where>
       <foreach collection="queryPairList" item="queryPair" index="index" separator=" and ">
@@ -26,7 +26,7 @@
 
 
   <!-- 根据字段更新 -->
-  <select id="updateByField" parameterType="com.jumore.dove.dao.ParamMap" resultType="Map">
+  <select id="updateByField" parameterType="com.licc.dove.dao.ParamMap" resultType="Map">
     update ${tableName} set
     <foreach collection="columnList" item="column" index="index" separator=",">
       ${column.name}=#{column.value}
@@ -38,7 +38,7 @@
     ${selectKey}
   </select>
 
-  <select id="batchInsert" parameterType="com.jumore.dove.dao.ParamMap" resultType="Map">
+  <select id="batchInsert" parameterType="com.licc.dove.dao.ParamMap" resultType="Map">
     insert into ${tableName} (
     <foreach collection="columns" item="column" index="index1" separator=",">${column}</foreach>
     )values
@@ -48,7 +48,7 @@
     </foreach>
   </select>
 
-  <insert id="insertEntity" parameterType="com.jumore.dove.dao.ParamMap" useGeneratedKeys="true" keyProperty="id">
+  <insert id="insertEntity" parameterType="com.licc.dove.dao.ParamMap" useGeneratedKeys="true" keyProperty="id">
     insert into ${tableName} (
     <foreach collection="queryPairList" item="queryPair" index="index1" separator=",">
       ${queryPair.columnName}
@@ -61,12 +61,12 @@
   </insert>
 
   <!--通过id删除-->
-  <delete id="deleteById" parameterType="com.jumore.dove.dao.ParamMap">
+  <delete id="deleteById" parameterType="com.licc.dove.dao.ParamMap">
     delete from ${tableName} where  ${idColumn}=#{idValue}
   </delete>
 
   <!-- 批量删除 -->
-  <delete id="deleteByIds" parameterType="com.jumore.dove.dao.ParamMap">
+  <delete id="deleteByIds" parameterType="com.licc.dove.dao.ParamMap">
     delete from ${tableName} where ${idColumn} in
     <foreach collection="ids" item="id" separator="," open="(" close=")">
       #{id}
@@ -74,7 +74,7 @@
   </delete>
 
   <!--通过id更新-->
-  <update id="updateEntityById" parameterType="com.jumore.dove.dao.ParamMap">
+  <update id="updateEntityById" parameterType="com.licc.dove.dao.ParamMap">
     UPDATE ${tableName}
     <set>
       <foreach collection="queryPairList" item="queryPair" index="index" separator=" and ">
@@ -86,7 +86,7 @@
     </where>
   </update>
 
-  <select id="findPage" parameterType="com.jumore.dove.dao.ParamMap" resultType="Map">
+  <select id="findPage" parameterType="com.licc.dove.dao.ParamMap" resultType="Map">
     SELECT * FROM ${tableName}
     <where>
       <foreach collection="queryPairList" item="queryPair" index="index" separator=" and ">

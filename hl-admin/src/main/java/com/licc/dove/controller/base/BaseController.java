@@ -16,12 +16,6 @@ import com.licc.dove.util.ResponseVoUtil;
 
 public class BaseController {
 
-
-
-
-
-
-
   public  <T> ResponseVo result(Page<T> page,String draw)  {
     if(StringUtils.isEmpty(draw)) draw = "0";
     return  ResponseVoUtil.successData(page).setDraw(Integer.parseInt(draw));

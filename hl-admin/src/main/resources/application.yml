@@ -29,10 +29,7 @@ spring:
       properties:
           hibernate.cache.use_second_level_cache: true
           hibernate.hbm2ddl.auto: update
-mybatis:
-  type-aliases-package: com.licc.dove.domain
-  config-location: classpath:mybatis/mybatis-config.xml
-  mapper-locations: classpath:mybatis/mapper/*.xml
+
 
 # mybatis 配置
 
